@@ -38,21 +38,23 @@ with open(csvpath) as csvfile:
 
         # Total changes in "Profit/ Losses over entire period
         total_pl = total_pl + int(row[1])
-
+        
+        #Average change in "Profit/Losses between months over entire period"
+        avg_change = sum(profits)/len(profits)
+        
         #Greatest increase in profits
         greatest_increase = max(profits)
         greatest_index = profits.index(greatest_increase)
         greatest_date = dates[greatest_index]
 
-        #Greatest decrease (lowest increase) in profits 
+        #Greatest decrease in profits 
         greatest_decrease = min(profits)
         worst_index = profits.index(greatest_decrease)
         worst_date = dates[worst_index]
 
-        #Average change in "Profit/Losses between months over entire period"
-        avg_change = sum(profits)/len(profits)
 
-        #Displaying information
+
+#Displaying information
 print("Financial Analysis")
 print("---------------------")
 print(f"Total Months: {str(total_months)}")
