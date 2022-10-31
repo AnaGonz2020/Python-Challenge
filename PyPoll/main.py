@@ -29,8 +29,8 @@ with open(csvpath) as csvfile:
     print(csvreader)
     csv_header = next(csvreader)
     #print(f'CSV Header: {csv_header}')
-    print ("Election Results")
-    print ("--------------------------------------------")
+    #print ("Election Results")
+    #print ("--------------------------------------------")
 
     #total_votes = 0
     #candidates = []
@@ -66,6 +66,8 @@ with open(csvpath) as csvfile:
 # Exporting info to .txt file           
 with open('output.txt', 'w') as output_file:
     print('Total Votes: ', total_votes)
+    print ("Election Results")
+    print ("--------------------------------------------")
     output_file.write('Total Votes: {} \n'.format(total_votes))
     print('-------------------------')
     output_file.write('------------------------- \n')
