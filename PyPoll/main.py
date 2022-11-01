@@ -17,10 +17,6 @@ import collections
 csvpath = r'\Users\Louie\uci\Python-Challenge\PyPoll\Resources\election_data.csv'
 
 total_votes = 0
-
-
-#1
-
 sumkhan = 0
 d=[]
 # Opening and reading the csv file
